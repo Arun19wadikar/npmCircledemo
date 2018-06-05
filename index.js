@@ -1,5 +1,9 @@
+
 function calculateCircumference(radius) {
-  return 2 * Math.PI * radius;
+  return new Promise((resolve, reject)=>{
+       var result = 2 * Math.PI * radius; 
+       resolve(result);
+  })
 }
 
 console.log(Math.PI);
